@@ -18,7 +18,8 @@ import EmployeePanel from './components/EmployeePanel';
 import AdminPanel from './components/AdminPanel';
 import RecordTime from './components/RecordTime';
 import AttendanceQueries from './components/AttendanceQueries';
-
+import DownloadMaterials from "./components/DownloadMaterials";
+import UploadMaterials from "./components/UploadMaterials";
 
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
         <Route path="/check-attendance" element={<CheckAttendance />} />
         <Route path="/record-time" element={<RecordTime/>}/>
         <Route path="/attendance-queries" element={<AttendanceQueries />} />
+        <Route path="/download-materials" element={<DownloadMaterials />} />
+        <Route path="/upload-materials" element={<UploadMaterials />} />
       </Routes>
     </HashRouter>
    

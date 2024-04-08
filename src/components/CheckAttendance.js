@@ -163,6 +163,9 @@ function CheckAttendance() {
               <li id="ca" className="nav-item">
                 <Link className="nav-link" to="/check-attendance">Check Attendance</Link>
               </li>
+              <li id="ca" className="nav-item">
+                <Link className="nav-link" to="/upload-materials">Upload Materials</Link>
+              </li>
               <li id="log" className="nav-item">
                 <Link className="nav-link" to="/Home" onClick={handleLogout}>Logout</Link>
               </li>

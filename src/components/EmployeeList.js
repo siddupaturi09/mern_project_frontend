@@ -32,7 +32,7 @@ function EmployeeList() {
     };
 
     return (
-        <div style={{backgroundColor:"#c5c6d0",height:'100vh'}} >
+        <div style={{backgroundColor:"#c5c6d0",height:'300vh'}} >
             <nav className="navbar navbar-expand-lg" id="admin-panel-navbar">
         <div className="container" >
           <Link className="navbar-brand" to="/">Admin Panel</Link>
@@ -49,6 +49,9 @@ function EmployeeList() {
               </li>
               <li id="ca" className="nav-item">
                 <Link className="nav-link" to="/check-attendance">Check Attendance</Link>
+              </li>
+              <li id="ca" className="nav-item">
+                <Link className="nav-link" to="/upload-materials">Upload Materials</Link>
               </li>
               <li id="log" className="nav-item">
                 <Link className="nav-link" to="/Home" onClick={handleLogout}>Logout</Link>

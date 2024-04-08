@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import RecordTime from './RecordTime';
 import AttendanceQueries from './AttendanceQueries';
+import DownloadMaterials from './DownloadMaterials';
 
 function EmployeePanel() {
   const navigate = useNavigate();
@@ -54,6 +55,11 @@ function EmployeePanel() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/download-materials" id="aq">
+                  Download Materials
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/Home" onClick={handleLogout} id="logout">
                   Logout
                 </Link>
@@ -79,6 +85,7 @@ function EmployeePanel() {
         <Routes>
           <Route path="/record-time" element={<RecordTime />} />
           <Route path="/attendance-queries" element={<AttendanceQueries />} />
+          <Route path="/download-materials" element={<DownloadMaterials />} />
         </Routes>
       </div>
     </div>

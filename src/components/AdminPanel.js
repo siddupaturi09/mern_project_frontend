@@ -4,6 +4,7 @@ import {  Route, Routes } from 'react-router-dom';
 import CreateEmployee from './CreateEmployee';
 import EmployeeList from './EmployeeList';
 import CheckAttendance from './CheckAttendance';
+import UploadMaterials from './UploadMaterials';
 import { useNavigate } from 'react-router-dom';
 
 function AdminPanel() {
@@ -32,6 +33,9 @@ function AdminPanel() {
               <li id="ca" className="nav-item">
                 <Link className="nav-link" to="/check-attendance">Check Attendance</Link>
               </li>
+              <li id="ca" className="nav-item">
+                <Link className="nav-link" to="/upload-materials">Upload Materials</Link>
+              </li>
               <li id="log" className="nav-item">
                 <Link className="nav-link" to="/Home" onClick={handleLogout}>Logout</Link>
               </li>
@@ -44,6 +48,7 @@ function AdminPanel() {
         <Route path="/create-employee" element={<CreateEmployee />} />
         <Route path="/employee-list" element={<EmployeeList />} />
         <Route path="/check-attendance" element={<CheckAttendance />} />
+        <Route path="/upload-materials" element={<UploadMaterials />} />
       </Routes>
 
 

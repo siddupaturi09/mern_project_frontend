@@ -185,6 +185,11 @@ function RecordTime() {
             </Link>
           </li>
           <li className="nav-item">
+          <Link className="nav-link" to="/download-materials" id="aq">
+            Download Materials 
+          </Link>
+        </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/Home" onClick={handleLogout} id="logout">
               Logout
             </Link>
